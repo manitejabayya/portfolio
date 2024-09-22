@@ -1,0 +1,219 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding-top: 100px; 
+  color: #333;
+  background-color: #f0f0f0; 
+}
+
+header {
+  background: #444; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 10px 0;
+}
+
+header h1 span {
+  color: #ff6600;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 50px 20px; 
+}
+
+
+.project {
+  padding: 20px;
+  max-width: 300px;
+  background: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+  width: 100%; 
+  border-radius: 10px; 
+}
+
+.project h2 {
+  margin: 15px 0 10px;
+  font-size: 1.5em; 
+}
+
+.project p {
+  font-size: 1em;
+}
+
+
+.project:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); 
+}
+
+
+#contact {
+  padding: 50px;
+  background-color: #333; 
+  color: white; 
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+  color: #ff6600;
+}
+
+#contact p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  color: #333; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: border-color 0.3s ease; 
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff6600; 
+  outline: none; 
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #cc5200; 
+}
+
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p:hover {
+  color: #ff6600;
+}
+
+
+@media (max-width: 768px) {
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Profile Corner Styles */
+.profile-corner {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.profile-corner img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-corner h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.profile-corner h2 span {
+  font-weight: bold;
+  color: #ff6600;
+}
